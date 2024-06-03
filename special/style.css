@@ -14,9 +14,16 @@
 }
 
 .card{
+    position: relative;
     width: 400px;
     height: 300px;
     border: 1px solid black;
+    overflow: hidden;
+}
+
+.card:hover .back{
+    top: 0;
+    transition: all 0.5s;
 }
 
 .card img{
@@ -24,8 +31,27 @@
     height: 270px;
 }
 
-.card p{
+.card > p{
+    position: absolute;
     width: 400px;
     height: 30px;
     padding-left: 10px;
+    z-index: 2;
+    background-color: #fff;
+    color: black;
+}
+
+.back{
+    position: absolute;
+    top: 270px;
+    width: 380px;
+    height: 250px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    z-index: 1;
+}
+
+.card:nth-child(1):hover .back:nth-child(2){
+    margin-top: 400px;
 }
