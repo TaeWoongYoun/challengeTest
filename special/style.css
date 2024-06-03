@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.special{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 300px;
+    display: flex;
+}
+
+.card{
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.card img{
+    width: 400px;
+    height: 270px;
+}
+
+.card p{
+    width: 400px;
+    height: 30px;
+    padding-left: 10px;
+}
