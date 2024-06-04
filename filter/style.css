@@ -8,6 +8,11 @@ ul li{
     list-style: none;
 }
 
+input{
+    position: relative;
+    left: -230px;
+}
+
 .search-box{
     position: relative;
     top: 50px;
@@ -41,7 +46,8 @@ ul li{
     background-color: #fff;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    display: none;
+    /* display: none; */
+    display: block;
 }
 
 .menu:hover{
@@ -51,6 +57,10 @@ ul li{
 .menu:hover + .search{
     display: block;
     z-index: 2;
+}
+
+#search2:checked~.name2{
+    display: none;
 }
 
 main{
