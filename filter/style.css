@@ -17,6 +17,10 @@ ul li{
     border: 1px solid black;
 }
 
+.search-box:hover .menu{
+    display: block;
+}
+
 .search{
     width: 240px;
     height: 40px;
@@ -25,6 +29,7 @@ ul li{
     position: absolute;
     top: 0;
     display: none;
+    background-color: #fff;
 }
 
 .menu{
@@ -36,13 +41,14 @@ ul li{
     background-color: #fff;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    display: none;
 }
 
 .menu:hover{
     background-color: beige;
 }
 
-.name2:hover + #name2{
+.menu:hover + .search{
     display: block;
     z-index: 2;
 }
