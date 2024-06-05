@@ -21,10 +21,8 @@ $(document).ready(function () {
         $(this).addClass('dragging'); // 드래그 시작 시 'dragging' 클래스 추가
     }).on('dragover', function (e) {
         e.preventDefault(); // 기본 드래그 동작 방지
-        $(this).addClass('over'); // 드래그 오버 시 'over' 클래스 추가
     }).on('drop', function (e) {
         e.preventDefault(); // 기본 드롭 동작 방지
-        $('.over').removeClass('over'); // 드롭 대상 요소에서 'over' 클래스 제거
         const $draggedItem = $('.dragging').removeClass('dragging'); // 드래그된 항목을 찾아서 'dragging' 클래스 제거
         const $this = $(this); // 현재 드롭된 축제 요소를 jQuery 객체로 저장
         if ($this.is($draggedItem)) return; // 드래그된 요소와 드롭된 요소가 같으면 함수 종료
