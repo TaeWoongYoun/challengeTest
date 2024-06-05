@@ -8,7 +8,7 @@ ul li {
     list-style: none;
 }
 
-input{
+input {
     display: none;
 }
 
@@ -82,7 +82,7 @@ main {
 .festivals:nth-child(2),
 .festivals:nth-child(3),
 .festivals:nth-child(4),
-.festivals:nth-child(5){
+.festivals:nth-child(5) {
     margin-top: 200px;
 }
 
@@ -92,12 +92,12 @@ main {
     margin: 10px;
 }
 
-.festivals h2 {
+.festivals h2,
+.festivals p {
     padding: 10px;
 }
 
 .festivals p {
-    padding: 10px;
     font-size: 18px;
 }
 
@@ -107,19 +107,19 @@ main {
     right: 10px;
 }
 
-#search1:checked ~.festivals,
-#search2:checked ~.two,
-#search3:checked ~.thr,
-#search4:checked ~.fou,
-#search5:checked ~.fiv,
-#search6:checked ~.six,
-#search7:checked ~.sev,
-#search8:checked ~.eig,
-#search9:checked ~.nin,
-#search10:checked~.ten,
-#search11:checked~.ele,
-#search12:checked~.twe,
-#search13:checked~.thi{
+#search1:checked ~ .festivals,
+#search2:checked ~ .two,
+#search3:checked ~ .thr,
+#search4:checked ~ .fou,
+#search5:checked ~ .fiv,
+#search6:checked ~ .six,
+#search7:checked ~ .sev,
+#search8:checked ~ .eig,
+#search9:checked ~ .nin,
+#search10:checked ~ .ten,
+#search11:checked ~ .ele,
+#search12:checked ~ .twe,
+#search13:checked ~ .thi {
     display: block;
 }
 
