@@ -75,7 +75,7 @@ main {
     width: 340px;
     height: 400px;
     border: 1px solid black;
-    margin: 9px;
+    margin: 8px;
     display: none;
 }
 
@@ -138,4 +138,27 @@ main {
 #search13:checked ~ .searchBox > #name13 {
     display: block;
     z-index: 1;
+}
+
+.selected {
+    border: 2px solid red;
+}
+.selected::after {
+    content: attr(data-order);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dragging {
+    opacity: 0.5;
+}
+.drop-animation {
+    transition: transform 0.3s;
 }
