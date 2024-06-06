@@ -37,12 +37,6 @@ $(document).ready(function () {
         }
 
         updateOrder(); // 선택된 요소의 순서를 업데이트
-
-        // 드롭 애니메이션 추가
-        selectedFestivals.forEach($festival => {
-            $festival.addClass('drop-animation'); // 각 선택된 요소에 드롭 애니메이션 클래스 추가
-            setTimeout(() => $festival.removeClass('drop-animation'), 500); // 0.5초 후 드롭 애니메이션 클래스 제거
-        });
     }).on('dragend', function () {
         $(this).removeClass('dragging'); // 드래그 종료 시 'dragging' 클래스 제거
     });
