@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.imgBox{
+    width: 1200px;
+    display: flex;
+}
+
+img{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
