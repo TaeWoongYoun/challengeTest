@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 인풋
+
+    슬라이드 > 슬라이드
+
+    카운터 -> 카운터
+
+    버튼 -->
+
+    <input type="radio" name="slide" id="slide1" checked>
+    <input type="radio" name="slide" id="slide2">
+    <input type="radio" name="slide" id="slide3">
+    <input type="radio" name="slide" id="slide4">
+    <input type="radio" name="slide" id="slide5">
+
+    <div class="window">
+        <div class="carousel">
+            <div class="slider" style="background-color: blue;">5</div>
+            <div class="slider slider1" style="background-color: red;">1</div>
+            <div class="slider slider2" style="background-color: orange;">2</div>
+            <div class="slider slider3" style="background-color: yellow;">3</div>
+            <div class="slider slider4" style="background-color: green;">4</div>
+            <div class="slider slider5" style="background-color: blue;">5</div>
+            <div class="slider" style="background-color: red;">1</div>
+
+        </div>
+    </div>
+
+    <div class="counter">
+        <div class="count count1">1/5</div>
+        <div class="count count2">2/5</div>
+        <div class="count count3">3/5</div>
+        <div class="count count4">4/5</div>
+        <div class="count count5">5/5</div>
+    </div>
+
+    <label for="slide1" class="nextBtn btn1">next</label>
+    <label for="slide2" class="nextBtn btn2">next</label>
+    <label for="slide3" class="nextBtn btn3">next</label>
+    <label for="slide4" class="nextBtn btn4">next</label>
+    <label for="slide5" class="nextBtn btn5">next</label>
+    <label for="slide1" class="prevBtn btn6">prev</label>
+    <label for="slide2" class="prevBtn btn7">prev</label>
+    <label for="slide3" class="prevBtn btn8">prev</label>
+    <label for="slide4" class="prevBtn btn9">prev</label>
+    <label for="slide5" class="prevBtn btn0">prev</label>
+</body>
+</html>

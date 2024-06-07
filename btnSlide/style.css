@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+input{
+    display: none;
+}
+
+.window{
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 1200px;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    z-index: 1;
+}
+
+.carousel{
+    margin-left: 400px;
+    width: 2800px;
+    height: 600px;
+    display: flex;
+    position: relative;
+}
+
+.slider{
+    width: 300px;
+    height: 600px;
+    font-size: 100px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 600px;
+    margin: 50px;
+}
+
+.counter{
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 75%;
+    left: 58.5%;
+    transform: translateX(-50%);
+    font-size: 40px;
+}
+
+.count{
+    position: absolute;
+    display: none;
+}
+
+.nextBtn{
+    position: absolute;
+    top: 90%;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+}
+
+.prevBtn{
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+}
+
+#slide1:checked~.btn2,
+#slide2:checked~.btn3,
+#slide3:checked~.btn4,
+#slide4:checked~.btn5,
+#slide5:checked~.btn1{
+    display: block;
+}
+#slide1:checked~.btn0,
+#slide2:checked~.btn6,
+#slide3:checked~.btn7,
+#slide4:checked~.btn8,
+#slide5:checked~.btn9{
+    display: block;
+}
+
+#slide1:checked~.window > .carousel{
+    left: -400px;
+    /* transition: all 0.5s; */
+}
+
+#slide2:checked~.window > .carousel{
+    left: -800px;
+    /* transition: all 0.5s; */
+
+}
+
+#slide3:checked~.window > .carousel{
+    left: -1200px;
+    /* transition: all 0.5s; */
+}
+
+#slide4:checked~.window > .carousel{
+    left: -1600px;
+    /* transition: all 0.5s; */
+}
+
+#slide5:checked~.window > .carousel{
+    left: -2000px;
+    /* transition: all 0.5s; */
+}
+
+#slide1:checked~.window > .carousel > .slider1,
+#slide2:checked~.window > .carousel > .slider2,
+#slide3:checked~.window > .carousel > .slider3,
+#slide4:checked~.window > .carousel > .slider4,
+#slide5:checked~.window > .carousel > .slider5{
+    transform: scale(1.1);
+    /* transition: all 0.5s; */
+}
+
+#slide1:checked~.counter > .count1,
+#slide2:checked~.counter > .count2,
+#slide3:checked~.counter > .count3,
+#slide4:checked~.counter > .count4,
+#slide5:checked~.counter > .count5{
+    display: block;
+}
+
+/* #next1:checked~.slide1{
+    visibility: visible;
+    opacity: 1;
+}
+#next2:checked~.slide2{
+    visibility: visible;
+    opacity: 1;
+}
+#next3:checked~.slide3{
+    visibility: visible;
+    opacity: 1;
+} */
