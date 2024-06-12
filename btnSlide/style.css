@@ -135,16 +135,3 @@ input{
 #slide5:checked~.counter > .count5{
     display: block;
 }
-
-/* #next1:checked~.slide1{
-    visibility: visible;
-    opacity: 1;
-}
-#next2:checked~.slide2{
-    visibility: visible;
-    opacity: 1;
-}
-#next3:checked~.slide3{
-    visibility: visible;
-    opacity: 1;
-} */
